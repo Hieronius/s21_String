@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD95BA1E2B6B33C800237AC9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DD95BA1D2B6B33C800237AC9 /* main.c */; };
+		DD937F9C2B6FA1E400C3C541 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DD937F9B2B6FA1E400C3C541 /* Makefile */; };
+		DD937F9E2B6FA1F600C3C541 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = DD937F9D2B6FA1F600C3C541 /* test.c */; };
+		DD95BA1E2B6B33C800237AC9 /* s21_string.c in Sources */ = {isa = PBXBuildFile; fileRef = DD95BA1D2B6B33C800237AC9 /* s21_string.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DD937F9A2B6FA12400C3C541 /* s21_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s21_string.h; sourceTree = "<group>"; };
+		DD937F9B2B6FA1E400C3C541 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DD937F9D2B6FA1F600C3C541 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		DD937FA12B6FA41E00C3C541 /* test_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_data.h; sourceTree = "<group>"; };
 		DD95BA1A2B6B33C800237AC9 /* s21_string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s21_string; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD95BA1D2B6B33C800237AC9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DD95BA1D2B6B33C800237AC9 /* s21_string.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s21_string.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		DD95BA1C2B6B33C800237AC9 /* s21_string */ = {
 			isa = PBXGroup;
 			children = (
-				DD95BA1D2B6B33C800237AC9 /* main.c */,
+				DD95BA1D2B6B33C800237AC9 /* s21_string.c */,
+				DD937F9A2B6FA12400C3C541 /* s21_string.h */,
+				DD937F9D2B6FA1F600C3C541 /* test.c */,
+				DD937F9B2B6FA1E400C3C541 /* Makefile */,
+				DD937FA12B6FA41E00C3C541 /* test_data.h */,
 			);
 			path = s21_string;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD95BA1E2B6B33C800237AC9 /* main.c in Sources */,
+				DD937F9E2B6FA1F600C3C541 /* test.c in Sources */,
+				DD937F9C2B6FA1E400C3C541 /* Makefile in Sources */,
+				DD95BA1E2B6B33C800237AC9 /* s21_string.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7YW3V66545;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -249,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 7YW3V66545;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
