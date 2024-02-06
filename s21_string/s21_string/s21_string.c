@@ -1,7 +1,7 @@
 #include "s21_string.h"
 
 #include <math.h>
-#include <stdarg.h>
+#include <stdarg.h> // used for undefined function arguments
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

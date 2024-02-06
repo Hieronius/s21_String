@@ -21,6 +21,9 @@ endif
 
 all: s21_string.a test gcov_report
 
+run: s21_string.
+	$(CC)
+
 clean:
 	rm -rf *.a && rm -rf *.o
 	rm -rf *.info && rm -rf *.gcda && rm -rf *.gcno &&  rm -rf *.gcov

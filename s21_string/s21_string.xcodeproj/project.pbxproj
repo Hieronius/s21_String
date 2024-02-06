@@ -66,8 +66,8 @@
 				DD95BA1D2B6B33C800237AC9 /* s21_string.c */,
 				DD937F9A2B6FA12400C3C541 /* s21_string.h */,
 				DD937F9D2B6FA1F600C3C541 /* test.c */,
-				DD937F9B2B6FA1E400C3C541 /* Makefile */,
 				DD937FA12B6FA41E00C3C541 /* test_data.h */,
+				DD937F9B2B6FA1E400C3C541 /* Makefile */,
 			);
 			path = s21_string;
 			sourceTree = "<group>";
