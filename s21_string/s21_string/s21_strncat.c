@@ -10,10 +10,16 @@
  * @param n Максимальная длина добавляемой строки.
  * @return char* Возвращает указатель на массив, в который добавлена строка
  */
-char *s21_strncat(char *dest, const char *src, s21_size_t n) {
-  char *a = dest + s21_strlen(dest);
 
-  while (*src && n--) *a++ = *src++;
+// Добавляет число символов n от строки src в строку dest
+char *s21_strncat(char *dest, const char *src, s21_size_t n) {
+  // Переходим к концу строки dest
+  char *a = dest + s21_strlen(dest);
+  // Проходимся по строке src пока n не станет равен 0
+    while (*src && n--) {
+        *a++ = *src++;
+    }
+    // "Закрываем" массив символом конца строки
   *a = '\0';
   return dest;
 }

@@ -20,13 +20,13 @@ void *s21_memmove(void *dest, const void *src, s21_size_t n) {
         dst += n;
         // Итерируем пока n не станет равен 0 и копируем содержимое src в dst
         while (n--) {
-            *--dst = *--o_src;
+            *--dst = *--o_src; // тоже самое что и *(dst(-1 + dst) = *(-1 + o_src)
         }
     
         // Так же итерируем пока n не станет равен 0 в случае отсутствия overlap или "перекрытия"
     } else {
         while (n--)  {
-            *dst++ = *o_src++;
+            *dst++ = *o_src++; // тоже самое что и *(dst + 1) = *(o_src + 1)
         }
     }
     return dest;
