@@ -1,9 +1,13 @@
 #ifndef  SRC_S21_STRING_H_
 #define SRC_S21_STRING_H_
 
-#include <stdarg.h>
+#include <math.h>
+#include <stdarg.h> // используется для переборки неопределенного числа аргументов функции
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-#define s21_NULL ((void *)0) // what is it?
+#define s21_NULL ((void *)0) // нулевой указатель
 #define ON 1
 #define OFF 0
 #define BUFF_SIZE 1024
