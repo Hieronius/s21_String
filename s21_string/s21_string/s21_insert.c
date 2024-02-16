@@ -7,6 +7,8 @@
  * @param start_index - Индекс позиции, с которой будем начинать вставку
  * @returns Новая строка
  */
+
+
 void *s21_insert(const char *src, const char *str, s21_size_t start_index) {
   s21_size_t head = s21_strlen(src);
   s21_size_t minor = s21_strlen(str);

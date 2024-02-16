@@ -10,18 +10,27 @@
  * @return s21_size_t Длина начального участка строки, содержащая только
  * символы, указанные в аргументе str2.
  */
-s21_size_t s21_strspn(const char *str1, const char *str2) {
-  s21_size_t i, j, counter = 0;
 
-  for (i = 0; &str1[i] != s21_NULL; i++) {
-    if (counter != i) break;
-    for (j = 0; &str2[j] != s21_NULL; j++) {
-      if (str1[i] == str2[j]) {
-        counter++;
-      } else {
-        break;
-      }
+// Вычисляет число совпадающих символов строки str2 в строке str1
+// Например "apple123" и "apel" вернет 2 ("a", "p")
+s21_size_t s21_strspn(const char *str1, const char *str2) {
+    s21_size_t i = 0;
+    s21_size_t j = 0;
+    s21_size_t counter = 0;
+    
+    // Проходимся по строкам и сравниваем каждый символ
+    for (i = 0; &str1[i] != s21_NULL; i++) {
+        if (counter != i) {
+            break;
+        }
+        for (j = 0; &str2[j] != s21_NULL; j++) {
+            if (str1[i] == str2[j]) {
+                counter++;
+            } else {
+                break;
+            }
+        }
     }
-  }
-  return counter;
+    // Возвращаем количество совпадений
+    return counter;
 }

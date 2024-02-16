@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD8DC14A2B7708CF00147340 /* s21_strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC1492B7708CF00147340 /* s21_strerror.c */; };
+		DD92B2202B75AC210025425D /* record_flag.c in Sources */ = {isa = PBXBuildFile; fileRef = DD92B21F2B75AC210025425D /* record_flag.c */; };
 		DD937F9C2B6FA1E400C3C541 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DD937F9B2B6FA1E400C3C541 /* Makefile */; };
 		DD937F9E2B6FA1F600C3C541 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = DD937F9D2B6FA1F600C3C541 /* test.c */; };
 		DD938D782B71F97400A6DFA5 /* s21_strlen.c in Sources */ = {isa = PBXBuildFile; fileRef = DD938D772B71F97400A6DFA5 /* s21_strlen.c */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DD8DC1492B7708CF00147340 /* s21_strerror.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s21_strerror.c; sourceTree = "<group>"; };
+		DD92B21F2B75AC210025425D /* record_flag.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = record_flag.c; sourceTree = "<group>"; };
 		DD937F9A2B6FA12400C3C541 /* s21_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s21_string.h; sourceTree = "<group>"; };
 		DD937F9B2B6FA1E400C3C541 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		DD937F9D2B6FA1F600C3C541 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
@@ -164,11 +168,13 @@
 				DD938D9D2B71FE4400A6DFA5 /* s21_strstr.c */,
 				DD938D9F2B71FE6500A6DFA5 /* s21_strtok.c */,
 				DD938DA12B71FE9D00A6DFA5 /* is_delim.c */,
+				DD8DC1492B7708CF00147340 /* s21_strerror.c */,
 				DD938DA32B71FECF00A6DFA5 /* s21_insert.c */,
 				DD9A3FB02B7309E0005D43E8 /* start.c */,
 				DD9A3FB22B730A06005D43E8 /* end.c */,
 				DD9A3FB42B730A26005D43E8 /* s21_trim.c */,
 				DD9A3FB62B730AD7005D43E8 /* s21_sprintf.c */,
+				DD92B21F2B75AC210025425D /* record_flag.c */,
 				DD9A3FB82B730B28005D43E8 /* parsing.c */,
 				DD9A3FBA2B730B4D005D43E8 /* is_digit.c */,
 				DD9A3FBC2B730B70005D43E8 /* is_specifier.c */,
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9A3FC12B730BC6005D43E8 /* itoc.c in Sources */,
+				DD8DC14A2B7708CF00147340 /* s21_strerror.c in Sources */,
 				DD9A3FBD2B730B70005D43E8 /* is_specifier.c in Sources */,
 				DD938D9E2B71FE4400A6DFA5 /* s21_strstr.c in Sources */,
 				DD938D802B71FAC300A6DFA5 /* s21_strcspn.c in Sources */,
@@ -263,6 +270,7 @@
 				DD938D7E2B71FA2D00A6DFA5 /* s21_memcpy.c in Sources */,
 				DD9A3FC92B730C6C005D43E8 /* uitos.c in Sources */,
 				DD9A3FB92B730B28005D43E8 /* parsing.c in Sources */,
+				DD92B2202B75AC210025425D /* record_flag.c in Sources */,
 				DD938DA42B71FECF00A6DFA5 /* s21_insert.c in Sources */,
 				DD938D9A2B71FDF200A6DFA5 /* s21_strspn.c in Sources */,
 				DD938D8C2B71FC1700A6DFA5 /* s21_strncat.c in Sources */,

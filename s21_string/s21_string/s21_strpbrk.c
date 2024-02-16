@@ -9,11 +9,17 @@
  * @return char* Указатель на первый найденный в строке str1 символ из множества
  * символов строки str2.
  */
+
+
+// Функция перебирает символы первой строки и сравнивает их с содержимым второй строки.
+// В случае совпадения возвращает указатель на этот символ
 char *s21_strpbrk(const char *str1, const char *str2) {
   char *string1 = (char *)str1;
   char *string2 = (char *)str2;
   int flag = 1;
   char *res = s21_NULL;
+  
+    // Перебираем символы строки str1 и сравниваем с str2
   for (int i = 0; string1[i] != '\0' && flag == 1; i++) {
     char symbol = string1[i];
     if (s21_strchr(string2, symbol) != s21_NULL) {

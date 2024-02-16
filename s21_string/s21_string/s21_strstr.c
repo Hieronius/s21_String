@@ -9,20 +9,24 @@
  * @return char* NULL – если строка heystack не входит в строку needle.
  * Указатель на первое вхождение строки heystack в строку needle.
  */
-char *s21_strstr(const char *haystack, const char *needle) {
-  int len_needle = s21_strlen(needle) - 1;
+
+// Функция определяет является ли str2 частью строки str1
+char *s21_strstr(const char *str1, const char *str2) {
+  int lenght = s21_strlen(str2) - 1;
   char *str = s21_NULL;
-  char *ptr = (char *)haystack;
+  char *ptr = (char *)str1;
 
   for (int i = 0; ptr[i] != '\0' && str == s21_NULL; i++) {
-    int count = 0, flag = 1;
-    while ((count <= len_needle) && flag) {
-      flag = ptr[i + count] == needle[count];
+      int count = 0;
+      int flag = 1;
+    while ((count <= lenght) && flag) {
+      flag = ptr[i + count] == str2[count];
       count++;
     }
-    if (flag && (count > len_needle)) {
+    if (flag && (count > lenght)) {
       str = &(ptr[i]);
     }
   }
+ // Возвращаем указатель на символ в строке str1, с которого начинается строка str2 в случае совпадения
   return str;
 }

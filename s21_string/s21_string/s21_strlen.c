@@ -11,10 +11,10 @@
 // const используем для того, чтобы убедиться, что в результате работы функция не будет изменена исходная строка
 s21_size_t s21_strlen(const char *str) {
     // Обьявляем счетчик символов
-    s21_size_t len = 0;
+    s21_size_t length = 0;
     // Проходимся по строке пока она не закончится
     while (str[length]) {
-        len++;
+        length++;
     }
-    return len;
+    return length;
 }
