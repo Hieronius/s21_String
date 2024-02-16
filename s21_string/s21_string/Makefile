@@ -1,13 +1,32 @@
-CC=gcc -std=c11 -D_GNU_SOURCE #flags for compiler
-TST_LIBS=-lcheck -lm -lpthread #flags for correct lib compilation
-GCOV_LIBS=--coverage # enable code coverage analysis
-BUILD_PATH=./ # mean program will be build in the current directory
-SOURCES=s21_string.c # probably should be replaced with *.c
-H=s21_string.h # our header
-LIBO=s21_string.o  module or object file that is created from the object files
-LIBA=s21_string.a # represent final library file that is created from the object
-EXE=test.out # EXE file to run with
-OS:=$(shell uname -s) # represent current Operation System of computer
+#flags for compiler
+CC=gcc -std=c11 -D_GNU_SOURCE
+
+#flags for correct lib compilation
+TST_LIBS=-lcheck -lm -lpthread
+
+#enable code coverage analysis
+GCOV_LIBS=--coverage
+
+#mean program will be build in the current directory
+BUILD_PATH=./
+
+#probably should be replaced with *.c
+SOURCES=s21_string.c
+
+#our header
+H=s21_string.h
+
+#module or object file that is created from the object files
+LIBO=s21_string.o
+
+#represent final library file that is created from the object
+LIBA=s21_string.a
+
+#EXE file to run with
+EXE=test.out
+
+#represent current Operation System of computer
+OS:=$(shell uname -s)
 
 ifeq ($(OS),Linux)
 		CC+=-D LINUX_OS
